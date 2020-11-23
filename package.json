@@ -1,0 +1,22 @@
+{
+  "name": "ibge",
+  "version": "1.0.0",
+  "description": "Módulo de Node.js que fornece dados da API IBGE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snippet/IBGE.git"
+  },
+  "author": "Jefferson Luís Pereira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snippet/IBGE/issues"
+  },
+  "homepage": "https://github.com/snippet/IBGE#readme",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
