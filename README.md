@@ -12,6 +12,7 @@ Módulo de Node.js que fornece dados da API IBGE
 ```javascript
 var ibge = require('ibge')
 
-// Retorna '3536505'
-var codigo = ibge('São Paulo', 'Paulínia')
+// Busca código IBGE por Município/Cidade
+// Retorno: 3536505 / type Number
+var codigo = ibge.getCode('São Paulo', 'Paulínia')
 ```
