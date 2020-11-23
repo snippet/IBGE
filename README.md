@@ -3,7 +3,7 @@
 Módulo de Node.js que fornece dados da API IBGE
 
 - [x] Busca código IBGE por Município/Cidade
-- [] Lista Municípios/Cidades de um Estado
+- [ ] Lista Municípios/Cidades de um Estado
 
 ## Instale
 `npm install ibge`
