@@ -1,6 +1,7 @@
 'use strict'
 
 const axios = require('axios');
+const Helper = require('./helper');
 
 const IBGE = {};
 
@@ -8,7 +9,7 @@ IBGE.getCode = async (uf, city) => {
     let distritos = null;
 
     if(uf.length !== 2)
-        uf = getUF(uf);
+        uf = Helper.getUF(uf);
 
     const res = await axios.get(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${uf}/distritos`)
     
@@ -20,7 +21,7 @@ IBGE.getCode = async (uf, city) => {
     let _distrito = null;
     for (const distrito of distritos) {
         
-        //se encontrar nome da cidade informada como distrito
+        //se encontrar nome da cidade como distrito salva ibge cod do respectivo municipio.
         if(distrito.nome && distrito.nome == city){
             _distrito = distrito.municipio.id;
         }
