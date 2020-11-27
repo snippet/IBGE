@@ -20,6 +20,10 @@ IBGE.getCode = async (uf, city) => {
 
     let _distrito = null;
     for (const distrito of distritos) {
+
+        //Normaliza nomes
+        distrito.nome = Helper.normalizar(distrito.nome);
+        city = Helper.normalizar(city);
         
         //se encontrar nome da cidade como distrito salva ibge cod do respectivo municipio.
         if(distrito.nome && distrito.nome == city){

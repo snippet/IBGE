@@ -1,6 +1,6 @@
 {
   "name": "ibge",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Módulo de Node.js que fornece dados da API IBGE",
   "main": "index.js",
   "dependencies": {
