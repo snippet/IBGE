@@ -23,6 +23,7 @@ IBGE.getCode = async (uf, city) => {
 
         //Normaliza nomes
         distrito.nome = Helper.normalizar(distrito.nome);
+        distrito.municipio.nome = Helper.normalizar(distrito.municipio.nome);
         city = Helper.normalizar(city);
         
         //se encontrar nome da cidade como distrito salva ibge cod do respectivo municipio.
